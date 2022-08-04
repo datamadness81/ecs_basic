@@ -75,8 +75,8 @@ pipeline {
           sh '''
           . .venv/bin/activate
           cdk destroy --force
-          echo 'AWS resoruces destroyed
           '''
+          echo 'AWS resources destroyed'
         }
       }
       post {
