@@ -9,7 +9,10 @@ pipeline {
   stages {
     stage('Create Project Folder') {
       steps {
-        sh 'mkdir -p -m a=rwx ecs_basic'
+        sh '''
+        rm -rf ecs_basic
+        mkdir -p -m a=rwx ecs_basic
+        '''
       }
     }
     stage('Initialize CDK Project') {
@@ -69,8 +72,11 @@ pipeline {
     stage('Destroy AWS Resources & Clean Jenkins Workspace') {
       steps {
         dir('ecs_basic') {
-          sh 'cdk destroy --force'
-          echo 'AWS resoruces destroyed'
+          sh '''
+          . .venv/bin/activate
+          cdk destroy --force
+          echo 'AWS resoruces destroyed
+          '''
         }
       }
       post {
