@@ -1,5 +1,13 @@
 # AWS Hands-On implementar aplicación web con contenedores en Amazon ECS
-![banner](images/banner.png)
+<img 
+    style="display: block; 
+           margin-left: auto;
+           margin-right: auto;
+           width: 100%;"
+    src="images/banner.png" 
+    alt="banner">
+</img>
+
 ## Descripción
 <p style="text-align:justify">
 Repositorio con el codigo y archivos necesarios para automatizar y orquestar un despliegue de aplicacion web con contenedores en Amazon ECS
@@ -26,5 +34,5 @@ utilizando el kit de desarrollo en la nube de AWS (CDK) con Python como lenguaje
     alt="pipeline">
 </img>
 
-## <b>[Tutorial](https://www.linkedin.com/pulse/servidor-apache-con-aws-cdk-john-ramirez/)</b>
+## <b>[Tutorial](https://www.linkedin.com/pulse/webapp-en-docker-usando-aws-ecs-john-ramirez/)</b>
 ## <b>[< Home](https://github.com/datamadness81)</b>
